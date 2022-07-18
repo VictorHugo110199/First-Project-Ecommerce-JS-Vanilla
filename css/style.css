@@ -1,0 +1,201 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+header{
+    display: flex;
+    box-shadow: 0px 4px 30px -10px rgba(0, 0, 0, 0.25);
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    margin-bottom: 52px;
+}
+body{
+    font-family: 'Inter', sans-serif;
+}
+.logo{
+    margin-left: 115px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #292929;
+    cursor: pointer;
+
+}
+.logo:hover{
+    color: #37268C;
+}
+.menuNavegacao{
+    margin-right:  115px;
+}
+.ulNav{
+    display: flex;
+    width: 305px;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 400;
+    color: #828282;
+}
+.botaoNav{
+    cursor: pointer;
+}
+.botaoNav:hover{
+    font-weight: 600;
+    color: #333333;
+}
+main{
+    margin: 0 115px 0 115px;
+}
+.mainSection{
+    display: flex;
+    justify-content: space-between;
+}
+.allProducts{
+    display: flex;
+    flex-wrap: wrap;
+    width: 772px;
+    justify-content: space-between;
+
+}
+.products{
+    display: flex;
+    flex-direction: column;
+    width: 230px;
+    margin-bottom: 25px;
+    height: 365px;
+    justify-content: flex-start;
+    border: 2px solid #F5F5F5;
+    background-color: #F5F5F5;
+}
+.products:hover{
+    border-color: #37268C;
+}
+.informacoes{
+    display: flex;
+    flex-direction: column;
+    height: 197px;
+    justify-content: space-around;
+    background-color: white;
+}
+.productType{
+    font-weight: 400;
+    font-size: 12px;
+    width: 73px;
+    height: 24px;
+    background-color: #2E245E;
+    border: #2E245E;
+    color: white;
+    margin: 0 5px 0 5px;
+}
+.nomeProduto{
+    font-weight: 700;
+    font-size: 18px;
+    color: #333333;
+    margin: 0 5px 0 5px;
+}
+.descricaoProduto{
+    font-weight: 400;
+    font-size: 14px;
+    color: #828282;
+    margin: 0 5px 0 5px;
+}
+.valorProduto{
+    font-weight: 500;
+    font-size: 12px;
+    color: #37268C;
+    margin: 0 5px 0 5px;
+}
+.botaoadd{
+    font-weight: 500;
+    font-size: 14px;
+    color: #828282;
+    margin: 0 5px 0 5px;
+    cursor: pointer;
+}
+.botaoadd:hover{
+    color: #333333;
+}
+.lateral{
+    width: 300px;
+}
+.campoPesquisa{
+    border-style: none;
+    width: 200px;
+    height: 50px;
+    background-color: #F5F5F5;
+    border-color: #F5F5F5;
+    color: #333333;
+}
+.botaoPesquisar{
+    border-style: none;
+    width: 86px;
+    height: 52px;
+    cursor: pointer;
+    color: white;
+    background-color: #37268C;
+    border-color: #37268C;
+}
+.headerCarrinho{
+    width: 295px;
+    height: 50px;
+    background-color:  #37268C;
+    border:  #37268C;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 35px;
+}
+.mainCarrinho{
+    width: 295px;
+    height: 214px;
+    background-color: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#frase01{
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 10px;
+}

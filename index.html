@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weartake</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script defer src="./js/database.js"></script>
+    <script defer src="./js/index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="logo">Weartake</h1>
+        <nav class="menuNavegacao">
+            <ul class="ulNav">
+                <li class="botaoNav">Todos</li>
+                <li class="botaoNav">Acessórios</li>
+                <li class="botaoNav">Calçados</li>
+                <li class="botaoNav">Camisetas</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="mainSection">
+            <ul class="allProducts">
+                <li class="products">
+                    <img src="./img/jaqueta.svg" alt="imagem de jaqueta">
+                    <div class="informacoes"><button class="productType">Camisetas</button>
+                        <p class="nomeProduto">Ligthweight Jacket</p>
+                        <p class="descricaoProduto">Adicione um pouco de energia ao seu guarda-roupa de inverno com esta jaqueta vibrante...</p>
+                        <p class="valorProduto">R$ 100</p>
+                        <p class="botaoadd">Adicionar ao carrinho</p>
+                    </div>
+                </li>
+                <li class="products">
+                    <img src="./img/gorro.svg" alt="imagem de Black Hat">
+                    <div class="informacoes"><button class="productType">Acessórios</button>
+                        <p class="nomeProduto">Black Hat</p>
+                        <p class="descricaoProduto">O gorro Next.js chegou! Esta beldade bordada tem um ajuste confortável que garante que...</p>
+                        <p class="valorProduto">R$ 100</p>
+                        <p class="botaoadd">Adicionar ao carrinho</p>
+                    </div>
+                </li>
+                <li class="products">
+                    <img src="./img/mascara.svg" alt="imagem de Mask">
+                    <div class="informacoes"><button class="productType">Acessórios</button>
+                        <p class="nomeProduto">Mask</p>
+                        <p class="descricaoProduto">Esta máscara facial durável é feita de duas camadas de tecido tratado e possui presilhas...</p>
+                        <p class="valorProduto">R$ 40</p>
+                        <p class="botaoadd">Adicionar ao carrinho</p>
+                    </div>
+                </li>
+                <li class="products">
+                    <img src="./img/camiseta_preta.svg" alt="imagem de T-Shirt">
+                    <div class="informacoes"><button class="productType">Camisetas</button>
+                        <p class="nomeProduto">T-Shirt</p>
+                        <p class="descricaoProduto">Esta t-shirt é imprescindível no seu guarda-roupa, combinando o caimento intemporal de...</p>
+                        <p class="valorProduto">R$ 100</p>
+                        <p class="botaoadd">Adicionar ao carrinho</p>
+                    </div>
+                </li>
+                <li class="products">
+                    <img src="./img/camiseta_branca.svg" alt="imagem de Short-Sleeve T-Shirt">
+                    <div class="informacoes"><button class="productType">Camisetas</button>
+                        <p class="nomeProduto">Short-Sleeve T-Shirt</p>
+                        <p class="descricaoProduto">Agora você encontrou a camiseta básica do seu guarda-roupa. É feito de um mais grosso...</p>
+                        <p class="valorProduto">R$ 100</p>
+                        <p class="botaoadd">Adicionar ao carrinho</p>
+                    </div>
+                </li>
+                <li class="products">
+                    <img src="./img/moletom.svg" alt="imagem de Champion Packable Jacket">
+                    <div class="informacoes"><button class="productType">Camisetas</button>
+                        <p class="nomeProduto">Champion Packable Jacket</p>
+                        <p class="descricaoProduto">Proteja-se dos elementos com esta jaqueta embalável Champion. Esta jaqueta de poliést...</p>
+                        <p class="valorProduto">R$ 100</p>
+                        <p class="botaoadd">Adicionar ao carrinho</p>
+                    </div>
+                </li>
+            </ul>
+            <div class="lateral">
+                <div class="pesquisa">
+                    <form>
+                        <input type="text" name="pesquisa" class="campoPesquisa" placeholder="Digite aqui sua pesquisa">
+                        <button type="submit" class="botaoPesquisar">Pesquisar</button>
+                    </form>
+                </div>
+                <div class="carrinhoCompras">
+                    <div class="headerCarrinho">
+                        <p>Carrinho de compras</p>
+                    </div>
+                    <div class="mainCarrinho">
+                        <p id="frase01">Carrinho vázio</p>
+                        <p>Adicione itens</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
