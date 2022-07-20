@@ -1,13 +1,16 @@
 let secaoProdutos = document.querySelector(".allProducts")
-let carrinho = document.querySelector(".mainCarrinho ul")
+let secaoCarrinho = document.querySelector(".mainCarrinho ul")
 let mainCarrinho = document.querySelector(".mainCarrinho")
 let frase01 = document.createElement("p")
 frase01.id = "frase01"
 frase01.innerText = "Carrinho vázio"
 let frase02 = document.createElement("p")
-frase02 = "frase02"
+frase02.id = "frase02"
 frase02.innerText = "Adicione itens"
-
+mainCarrinho.appendChild(frase01)
+mainCarrinho.appendChild(frase02)
+let carrinhoQuantidade = document.querySelector(".carrinhoQuantidade")
+let valorTotal = document.querySelector(".valorTotal")
 
 function listarProdutos (arrProdutos, secao){
     secao.innerHTML = ""
@@ -61,9 +64,10 @@ function ListarProdutoCarrinho(event){
     if(btnAdicionar.className == "botaoadd"){
         let produto = btnAdicionar.closest("li").cloneNode(true)
         let produtoCarrinho = cardCarrinho(produto)
-        carrinho.appendChild(produtoCarrinho)
+        secaoCarrinho.appendChild(produtoCarrinho)
     }
-    avisoCarrinho(carrinho)
+    avisoCarrinho(secaoCarrinho)
+    quantidadeValores(secaoCarrinho)
 }
 function cardCarrinho (produto){
     let imagemSrc = produto.children[0].src
@@ -98,14 +102,34 @@ function cardCarrinho (produto){
     return newLiCarrinho
 }
 function avisoCarrinho (ul){
-    if(carrinho.children.length !== 0){
+    if(secaoCarrinho.children.length !== 0){
+        let removerFrase01 = mainCarrinho.children[1]
+        let removerFrase02 = mainCarrinho.children[2]
         for(let i = 0; i < mainCarrinho.children.length; i++){
-            if(mainCarrinho.children[i].tagName == "P")
-            mainCarrinho.children[0].remove()
+            if(mainCarrinho.children[i].id == "frase01"){
+                removerFrase01.remove()
+                removerFrase02.remove()
+            }
         }
-    } else {
+    } else if (secaoCarrinho.children.length <= 0){
         mainCarrinho.appendChild(frase01)
         mainCarrinho.appendChild(frase02)
     }
-    return
+}
+secaoCarrinho.addEventListener("click", funcaoRemover)
+function funcaoRemover (event){
+    let bntRemover = event.target
+    if(bntRemover.className == "bntRemover"){
+        let liRemover = bntRemover.closest("li")
+        liRemover.remove()
+    }
+    avisoCarrinho(secaoCarrinho)
+    quantidadeValores(secaoCarrinho)    
+}
+function quantidadeValores (ul){
+    for(let i = 0; i < ul.children.length; i++){
+        let valores = ul.children[i].children[1].children[1].textContent
+        console.log(valores)
+        carrinhoQuantidade.innerHTML = `${ul.children.length}`
+    } 
 }
