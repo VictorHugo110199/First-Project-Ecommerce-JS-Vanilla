@@ -27,67 +27,11 @@
     <main>
         <section class="mainSection">
             <ul class="allProducts">
-                <li class="products">
-                    <img src="./img/jaqueta.svg" alt="imagem de jaqueta">
-                    <div class="informacoes"><button class="productType">Camisetas</button>
-                        <p class="nomeProduto">Ligthweight Jacket</p>
-                        <p class="descricaoProduto">Adicione um pouco de energia ao seu guarda-roupa de inverno com esta jaqueta vibrante...</p>
-                        <p class="valorProduto">R$ 100</p>
-                        <p class="botaoadd">Adicionar ao carrinho</p>
-                    </div>
-                </li>
-                <li class="products">
-                    <img src="./img/gorro.svg" alt="imagem de Black Hat">
-                    <div class="informacoes"><button class="productType">Acessórios</button>
-                        <p class="nomeProduto">Black Hat</p>
-                        <p class="descricaoProduto">O gorro Next.js chegou! Esta beldade bordada tem um ajuste confortável que garante que...</p>
-                        <p class="valorProduto">R$ 100</p>
-                        <p class="botaoadd">Adicionar ao carrinho</p>
-                    </div>
-                </li>
-                <li class="products">
-                    <img src="./img/mascara.svg" alt="imagem de Mask">
-                    <div class="informacoes"><button class="productType">Acessórios</button>
-                        <p class="nomeProduto">Mask</p>
-                        <p class="descricaoProduto">Esta máscara facial durável é feita de duas camadas de tecido tratado e possui presilhas...</p>
-                        <p class="valorProduto">R$ 40</p>
-                        <p class="botaoadd">Adicionar ao carrinho</p>
-                    </div>
-                </li>
-                <li class="products">
-                    <img src="./img/camiseta_preta.svg" alt="imagem de T-Shirt">
-                    <div class="informacoes"><button class="productType">Camisetas</button>
-                        <p class="nomeProduto">T-Shirt</p>
-                        <p class="descricaoProduto">Esta t-shirt é imprescindível no seu guarda-roupa, combinando o caimento intemporal de...</p>
-                        <p class="valorProduto">R$ 100</p>
-                        <p class="botaoadd">Adicionar ao carrinho</p>
-                    </div>
-                </li>
-                <li class="products">
-                    <img src="./img/camiseta_branca.svg" alt="imagem de Short-Sleeve T-Shirt">
-                    <div class="informacoes"><button class="productType">Camisetas</button>
-                        <p class="nomeProduto">Short-Sleeve T-Shirt</p>
-                        <p class="descricaoProduto">Agora você encontrou a camiseta básica do seu guarda-roupa. É feito de um mais grosso...</p>
-                        <p class="valorProduto">R$ 100</p>
-                        <p class="botaoadd">Adicionar ao carrinho</p>
-                    </div>
-                </li>
-                <li class="products">
-                    <img src="./img/moletom.svg" alt="imagem de Champion Packable Jacket">
-                    <div class="informacoes"><button class="productType">Camisetas</button>
-                        <p class="nomeProduto">Champion Packable Jacket</p>
-                        <p class="descricaoProduto">Proteja-se dos elementos com esta jaqueta embalável Champion. Esta jaqueta de poliést...</p>
-                        <p class="valorProduto">R$ 100</p>
-                        <p class="botaoadd">Adicionar ao carrinho</p>
-                    </div>
-                </li>
             </ul>
             <div class="lateral">
                 <div class="pesquisa">
-                    <form>
-                        <input type="text" name="pesquisa" class="campoPesquisa" placeholder="Digite aqui sua pesquisa">
-                        <button type="submit" class="botaoPesquisar">Pesquisar</button>
-                    </form>
+                    <input type="text" name="pesquisa" class="campoPesquisa" placeholder="Digite aqui sua pesquisa">
+                    <button type="submit" class="botaoPesquisar">Pesquisar</button>
                 </div>
                 <div class="carrinhoCompras">
                     <div class="headerCarrinho">
@@ -95,7 +39,19 @@
                     </div>
                     <div class="mainCarrinho">
                         <p id="frase01">Carrinho vázio</p>
-                        <p>Adicione itens</p>
+                        <p id="frase02">Adicione itens</p>
+                        <ul> 
+                        </ul>
+                    </div>
+                    <div class="carrinhoInfo">
+                        <span class="carrinhoEstatico">
+                            <p>Quantidade:</p>
+                            <p>Total:</p>
+                        </span>
+                        <span class="carrinhoVariaveis">
+                            <p class="carrinhoQuantidade">0</p>
+                            <p class="valorTotal">R$00.00</p>
+                        </span>
                     </div>
                 </div>
             </div>
