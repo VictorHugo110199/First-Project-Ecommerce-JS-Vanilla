@@ -11,6 +11,8 @@ mainCarrinho.appendChild(frase01)
 mainCarrinho.appendChild(frase02)
 let carrinhoQuantidade = document.querySelector(".carrinhoQuantidade")
 let valorTotal = document.querySelector(".valorTotal")
+let span = document.createElement("span")
+span.classList.add("carrinhoVariaveis")
 
 function listarProdutos (arrProdutos, secao){
     secao.innerHTML = ""
@@ -127,9 +129,15 @@ function funcaoRemover (event){
     quantidadeValores(secaoCarrinho)    
 }
 function quantidadeValores (ul){
+    let valores = 0
     for(let i = 0; i < ul.children.length; i++){
-        let valores = ul.children[i].children[1].children[1].textContent
-        console.log(valores)
+        valores = valores + parseFloat(ul.children[i].children[1].children[1].textContent.replace(/[R\$ \.]/g, '').replace(',', '.'))
+        valorTotal.innerText = `R$ ${valores}`
         carrinhoQuantidade.innerHTML = `${ul.children.length}`
-    } 
+    }
+    if(ul.children[0] == undefined){
+        valorTotal.innerText = `R$ 0`
+        carrinhoQuantidade.innerHTML = `0`
+    }
 }
+
